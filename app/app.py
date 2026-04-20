@@ -4,8 +4,13 @@ from app.schemas import *
 from datetime import datetime, timedelta
 from jose import JWTError, jwt
 from passlib.context import CryptContext
+import os 
+from dotenv import load_dotenv
+from os import getenv
 
-SECRET_KEY = "2ef9c9b477580b730f8f7fa5fb774af68b2099753537cf4148f2d6a9a949bdce"
+load_dotenv()
+
+SECRET_KEY = load_dotenv("SECRET_KEY")
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRES_MINUTES = 30
 
