@@ -1,7 +1,7 @@
 [project]
 name = "authentication-authorization-fastapi"
 version = "0.1.0"
-description = "Add your description here"
+description = "It is ismple authentication routs for a beginer to learn"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
